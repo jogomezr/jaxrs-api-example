@@ -42,13 +42,6 @@
             </exclusions>
         </dependency>
         
-        <dependency>
-			<groupId>javax.ws.rs</groupId>
-			<artifactId>javax.ws.rs-api</artifactId>
-			<version>2.1</version>
-			<scope>provided</scope>
-		</dependency>
-        
         <!-- OpenAPI Generation Dependencies - END -->
 
 		<dependency>
@@ -128,8 +121,7 @@
                                 </license>
                             </info>
                             <outputFormats>yaml</outputFormats>
-                            <outputPath>${basedir}/generated/document.html</outputPath>
-                            <swaggerDirectory>generated/swagger-ui</swaggerDirectory>                           
+                            <swaggerDirectory>generated/swagger-api-spec</swaggerDirectory>                           
                             <!-- JAX-RS annotations -->
                             <swaggerApiReader>com.github.kongchen.swagger.docgen.reader.JaxrsReader</swaggerApiReader>
                         </apiSource>
